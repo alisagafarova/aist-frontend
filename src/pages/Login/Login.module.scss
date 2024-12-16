@@ -1,0 +1,76 @@
+.auth_page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.auth_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+.auth_form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth_form input:focus {
+  border-color: #efda38;
+  box-shadow: 0 0 10px rgba(239, 218, 56, 0.5);
+}
+
+.auth_form button {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #efda38;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth_form button:hover {
+  background-color: #d1b833;
+  transform: translateY(-3px);
+}
+
+.error_message {
+  font-size: 14px;
+  color: #dc3545;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.auth_link,
+.forgot_password {
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.auth_link a,
+.forgot_password a {
+  color: #efda38;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth_link a:hover,
+.forgot_password a:hover {
+  text-decoration: underline;
+}

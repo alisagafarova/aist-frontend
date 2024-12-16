@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Khand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.root {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+
+.intro {
+  margin-top: 50px;
+  display: flex;
+  align-self: center;
+  width: 90%;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.intro_title {
+  font-family: "Ruda", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+  text-align: left;
+  font-size: 70px;
+  align-self: flex-end;
+  width: 800px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.intro_button {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  width: 300px;
+  height: 65px;
+  font-size: 24px;
+  background-color: #EFDA38;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.intro_button:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.network {
+  position: relative;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.network_image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: solid 1px white;
+}
+
+.network::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, white, transparent);
+  pointer-events: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Выравнивание элементов внутри по верхнему краю */
+  justify-content: space-between;
+  width: 90%;
+  margin: 150px auto;
+}
+
+.image_me {
+  max-width: 50%;
+  height: auto; /* Сохраняет пропорции */
+  object-fit: contain; /* Вписываем изображение без обрезания */
+  display: block;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.about_text {
+  flex: 1;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+}
+
+.about_text li {
+  list-style-type: circle;
+  padding: 10px;
+}
+
+.go_button {
+  font-family: "Roboto Mono", monospace;
+  width: 400px;
+  height: 65px;
+  font-size: 24px;
+  background-color: #EFDA38;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto 70px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.go_button:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 1024px) {
+  .intro_title {
+    font-size: 50px;
+    width: 100%;
+  }
+
+  .intro {
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro_title {
+    max-width: 600px;
+    padding-left: 0px;
+    font-size: 5vw;
+  }
+
+  .intro_button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .about {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:0 ;
+  }
+
+  .image_me {
+    width: 70%;
+  }
+
+  .about_text {
+    font-size: 1.5vw;
+    text-align: center;
+    text-align: left;
+  }
+  .go_button {
+    width: 40vw;
+    height: 50px;
+    font-size: 2.3vw;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro_title {
+    font-size: 40px;
+  }
+  .image_me {
+    max-width: 90%; /* Увеличиваем ширину на небольших экранах */
+  }
+  .intro_button {
+    font-size: 16px;
+    height: 45px;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .about_text {
+    font-size: 2vw;
+    text-align: left;
+    width: 90%;
+  }
+
+  .go_button {
+    width: 40vw;
+    height: 50px;
+  }
+
+  .network {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .network_image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: solid 1px white;
+  }
+}
+
+@media (max-width: 550px) {
+  .network {
+    margin-top: 50px;
+  }
+  .intro_title {
+    font-size: 20px;
+  }
+
+  .intro_button {
+    font-size: 10px;
+    height: 40px;
+    width: 100px;
+  }
+
+  .about_text {
+    font-size: 3vw;
+  }
+
+  .go_button {
+    font-size: 2.5vw;
+    height: 40px;
+  }
+}
+
+

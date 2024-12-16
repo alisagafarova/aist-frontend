@@ -1,0 +1,22 @@
+.input {
+    font-size: 14px;
+    border: none;
+    background-color: #000000; /* Set input background to black */
+    color: #00ff00; /* Bright green text for input */
+    font-family: monospace;
+    outline: none;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .terminal_input {
+    display: flex;
+    width: 100%; /* или задайте точную ширину, чтобы избежать переноса */
+    align-items: center;
+  }
+  
+  .prompt_prefix {
+    color: #00ff00; // Сделать текст зелёным, как в терминале
+    margin-right: 5px;
+    flex-shrink: 0; 
+  }

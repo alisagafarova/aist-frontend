@@ -1,0 +1,135 @@
+.lab_block {
+    display: flex;
+    width: 85%;
+    font-family: "Khand", sans-serif;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.lab_environment {
+    display: flex;
+    gap:10px;
+
+    height: 600px;
+}
+
+.lab_image {
+    width: 90%;
+}
+
+.lab_task h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lab_task p {
+    font-size: 14px;
+    color: #333;
+}
+
+.lab_task ul {
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.lab_task code {
+    font-size: 14px;
+    color: #000000;
+    font-family: "Khand", sans-serif;
+}
+
+.terminal.successBorder {
+    border-color: #28a745;
+    border: solid 5px; /* Зеленая рамка для успешного выполнения */
+}
+
+.terminal.successBorder {
+    border-color: #28a745; /* Зеленая рамка для успешного выполнения */
+}
+
+/* Убедитесь, что lab_terminal имеет относительное позиционирование для кнопки */
+.lab_terminal {
+    position: relative;
+    width: 60%;
+    padding: 20px;
+}
+
+.lab_buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center; /* Выравнивает кнопки по вертикали */
+}
+
+.lab_buttons .left {
+    margin-right: auto; /* Отодвигает кнопку "Вернуться к теме" влево */
+}
+
+.lab_buttons .right {
+    display: flex;
+    gap: 10px;
+    padding: 20px; /* Расстояние между кнопками справа */
+}
+
+.button_previous{
+    font-family: "Roboto Mono", monospace;
+    width: 170px;
+    height: 45px;
+    font-size: 13px;
+    background-color: #EFDA38;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.button_previous:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resetButton {
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 0;
+    position: relative;
+
+    /* Для всплывающей подсказки */
+    &[data-tooltip]::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 100%; /* Расположение над кнопкой */
+        left: 100%;
+        transform: translateX(-50%);
+        // background-color: #706f6f;
+        border: solid #706f6f 1px;
+        color: #000000;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-family: "Roboto Mono", monospace;
+        white-space: nowrap; /* Не переносить текст */
+        opacity: 0; /* Изначально скрыта */
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+&[data-tooltip]:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px); /* Анимация появления */
+}
+}
+
+.image_button {
+    width: 30px;
+    height: 30px;
+}
+

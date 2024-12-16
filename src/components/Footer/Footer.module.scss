@@ -1,0 +1,56 @@
+.footer {
+  background-color: #ffffff; /* Цвет фона */
+  color: #000; /* Цвет текста */
+  padding: 20px 10px; /* Внутренние отступы */
+  text-align: center; /* Центровка текста */
+  font-family: 'Roboto Mono', monospace; /* Шрифт */
+margin-top:150px;
+}
+
+.container {
+  max-width: 1200px; /* Максимальная ширина */
+  margin: 0 auto; /* Центровка контейнера */
+  display: flex; /* Гибкий контейнер */
+  flex-direction: column; /* Направление - колонка */
+  align-items: center; /* Центровка элементов */
+  gap: 10px; /* Расстояние между элементами */
+}
+
+.text {
+  font-size: 14px; /* Размер текста */
+}
+
+.links {
+  display: flex; /* Горизонтальное расположение ссылок */
+  gap: 15px; /* Расстояние между ссылками */
+}
+
+.link {
+  font-size: 14px; /* Размер текста ссылок */
+  color: #000; /* Цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  transition: color 0.3s ease; /* Плавный переход цвета */
+
+  &:hover {
+    color: #333; /* Цвет при наведении */
+  }
+}
+
+.author {
+  font-size: 12px; /* Размер текста автора */
+  font-style: italic; /* Курсив */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .text,
+  .link,
+  .author {
+    font-size: 12px; /* Уменьшаем размер текста */
+  }
+
+  .links {
+    flex-direction: column; /* Вертикальное расположение ссылок */
+    gap: 10px;
+  }
+}

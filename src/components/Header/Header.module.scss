@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Denk+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Khand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruda:wght@400..900&display=swap');
+
+.root {
+  background-color: #fff;
+  margin: 30px auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+
+.logo_header {
+  width: 100px;
+  transition: 0.1s; 
+  padding-left: 0;
+
+  &:hover {
+    transform: scale(1.02)
+}
+}
+
+.popup_ul{
+  list-style: none;
+  position: relative;
+  top: 150px;
+  left: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.popup_li {
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  color: black;
+  list-style: none;
+  
+}
+.authButton {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+.loginButton,
+.logoutButton {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  color: #000000;
+  background-color: #EFDA38;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logoutButton {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  color: #000000;
+  background-color: #ebebeb;
+  border: solid #EFDA38 1px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loginButton:hover,
+.logoutButton:hover {
+  background-color: #d1b833;
+  transform: translateY(-3px);
+}
+
+.loginButton:active,
+.logoutButton:active {
+  background-color: #b89f2e;
+  transform: translateY(0);
+}

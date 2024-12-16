@@ -1,0 +1,54 @@
+.terminal {
+  background-color: #000000; /* Set background to black */
+  color: #00ff00; /* Bright green text for visibility */
+  padding:20px;
+  font-family: monospace;
+  font-size: 14px;
+  border-radius: 0 0 5px 5px; /* Закругление только для нижних углов */
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  overflow-y: auto;
+  position: relative;
+  height: 520px;
+}
+
+.terminal.successBorder {
+  border-color: #28a745;
+  border: solid 5px; /* Зеленая рамка для успешного выполнения */
+}
+
+.terminal.successBorder {
+  border-color: #28a745; /* Зеленая рамка для успешного выполнения */
+}
+
+.lab_terminal {
+  width: 60%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  height: 35px;
+}
+
+.tab {
+  width: 46px;
+  cursor: pointer;
+  border: none;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s ease;
+  border-top-left-radius: 7px; /* Закругление верхнего левого угла */
+  border-top-right-radius: 7px; /* Закругление верхнего правого угла */
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.active_tab {
+  width: 46px;
+  background-color: white;
+  border-bottom: 2px solid #00ff00;
+  font-weight: bold;
+}

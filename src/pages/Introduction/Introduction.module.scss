@@ -1,0 +1,75 @@
+.pageContainer {
+  display: flex;
+  width: 90%;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.taskButton{
+  font-family: "Roboto Mono", monospace;
+  width: 170px;
+  height: 45px;
+  font-size: 13px;
+  background-color: #EFDA38;
+  border-radius: 10px;
+  border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    align-self: flex-end;
+}
+
+.taskButton:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.config_guide {
+  font-family: "Roboto Mono", monospace;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333;
+  border-radius: 8px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.config_guide h2 {
+color: #2c3e50;
+}
+
+.config_guide h3 {
+  color: #34495e;
+  margin-top: 20px;
+}
+
+.config_guide ul,
+.config_guide ol {
+  padding-left: 20px;
+  margin: 10px 0;
+  margin: 0; /* Убираем отступы вокруг списка */
+  padding: 0;
+  list-style-position: inside;
+}
+
+.config_guide pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+.buttons_bar {
+  display: flex;
+  justify-content: space-between;
+}

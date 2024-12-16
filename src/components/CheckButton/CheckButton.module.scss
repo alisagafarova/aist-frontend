@@ -1,0 +1,26 @@
+.root_button {
+  border: solid red 1px;
+
+}
+
+.checkButton{
+    font-family: "Roboto Mono", monospace;
+    width: 170px;
+    height: 45px;
+    font-size: 13px;
+    background-color: #EFDA38;
+    border-radius: 10px;
+    border: none;
+     cursor: pointer;
+     transition: box-shadow 0.3s;
+  
+  }
+  
+  .checkButton:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkButton.success {
+    background-color: #4caf50; /* Зелёный цвет */
+    color: white;
+  }

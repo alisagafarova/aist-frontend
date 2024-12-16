@@ -1,0 +1,34 @@
+.lab_block {
+  display: flex;
+  width: 85%;
+  font-family: "Khand", sans-serif;
+  margin: 0 auto;
+  flex-direction: column;
+
+}
+.lab_environment {
+  display: flex;
+}
+
+.lab_buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.button_previous{
+  font-family: "Roboto Mono", monospace;
+  width: 170px;
+  height: 45px;
+  font-size: 13px;
+  background-color: #EFDA38;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.button_previous:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
