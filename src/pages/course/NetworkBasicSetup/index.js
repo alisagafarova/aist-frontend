@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styles from './NetworkBasicSetup.module.scss';
 import { ProgressBar } from '../../../components/ProgressBar';
 import { useDispatch } from 'react-redux';
-import { setCurrentTask } from '../../../redux/slices/slices';
+import { setCurrentTask, setcurrentLab } from '../../../redux/slices/slices';
 
 export const NetworkBasicSetup = () => {
   const dispatch = useDispatch();

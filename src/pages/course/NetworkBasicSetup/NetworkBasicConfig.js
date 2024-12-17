@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import TaskContainer from '../../../components/TaskContainer';
-import { resetTask, setcurrentLab } from '../../../redux/slices/slices';
+import { resetTask, setcurrentLab, setCurrentTask } from '../../../redux/slices/slices';
 import resetImage from '../../../images/redo.png';
 import helpImage from '../../../images/problem-solving.png';
 
