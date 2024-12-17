@@ -9,7 +9,8 @@ export const NetworkBasicSetup = () => {
 
   useEffect(() => {
     dispatch(setCurrentTask('network-config'));
-  }, []);
+    dispatch(setcurrentLab('lab3'));
+  }, [dispatch]);
 
   const navigateToTask = () => {
     window.location.href = '/network-config/task3/';

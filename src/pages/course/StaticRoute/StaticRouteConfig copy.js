@@ -18,6 +18,7 @@ export const StaticRouteConfig = () => {
     dispatch(setcurrentLab('lab2'));
     dispatch(setCurrentRouter('R1'));
   }, [dispatch]);
+
   const { currentUser, currentLab } = useSelector((state) => state.terminal.currentContext);
 
   const handleReset = () => {

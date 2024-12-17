@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import TaskContainer from '../../../components/TaskContainer';
 import {
@@ -13,10 +13,11 @@ import helpImage from '../../../images/problem-solving.png';
 export const TaskInterfaceConfig = () => {
   const dispatch = useDispatch();
 
-  // Настройка контекста задания
-  dispatch(setCurrentTask('interface-config'));
-  dispatch(setcurrentLab('lab1'));
-  dispatch(setCurrentRouter('R1'));
+  useEffect(() => {
+    dispatch(setCurrentTask('interface-config'));
+    dispatch(setcurrentLab('lab1'));
+    dispatch(setCurrentRouter('R1'));
+  }, [dispatch]); // Зависимость для предотвращения лишних вызовов
 
   const { currentUser, currentLab } = useSelector((state) => state.terminal.currentContext);
 

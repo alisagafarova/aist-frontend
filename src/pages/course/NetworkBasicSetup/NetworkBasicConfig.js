@@ -9,6 +9,7 @@ export const NetworkBasicConfig = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(setCurrentTask('network-config'));
     dispatch(setcurrentLab('lab3'));
   }, [dispatch]);
 
