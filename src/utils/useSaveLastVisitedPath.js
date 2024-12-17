@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { saveLastVisitedPath } from '../redux/actions/lastVisitedPathActions';
 
 const allowedPaths = [
+  '/intro/',
   '/interface-config/',
   '/interface-config/task1/',
   '/static-route/',

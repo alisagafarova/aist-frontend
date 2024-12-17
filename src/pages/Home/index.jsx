@@ -25,7 +25,7 @@ export const Home = () => {
     if (!isAuthenticated) {
       navigate('/login/'); // Перенаправляем на страницу входа
     } else {
-      const lastVisitedPath = lastVisited || '/interface-config/';
+      const lastVisitedPath = lastVisited || '/intro/';
       navigate(lastVisitedPath); // Перенаправляем на сохраненную страницу
     }
   };
