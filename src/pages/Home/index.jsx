@@ -52,7 +52,7 @@ export const Home = () => {
           <p> Прошу вас протестировать сайт и поделиться своими впечатлениями. Буду рад вашим пожеланиям и словам благодарности!</p> 
         </div>
       </div>
-      <Link to='/interface-config/'><button className={styles.go_button}>Погнали тестировать</button></Link>
+      <button className={styles.go_button} onClick={handleStartLearning}>Погнали тестировать</button>
     </div>
   );
 };
