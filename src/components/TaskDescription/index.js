@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import styles from './TaskDescription.module.scss';
-import IntConfigImg from '../../images/int_confug.png';
+import IntConfigImg from '../../images/image_config.png';
 import StaticRouteConfigImg from '../../images/ static_route_config.png';
 
 const taskData = {

@@ -7,7 +7,7 @@ import styles from './TaskContainer.module.scss';
 
 const TaskContainer = ({ labData, onReset, onHelp }) => {
   const { title, description, steps, imagePath, imageAlt, previousLink, taskId } = labData;
-
+  console.log('imagePath', imagePath);
   return (
     <div className={styles.lab_block}>
       <div className={styles.lab_environment}>

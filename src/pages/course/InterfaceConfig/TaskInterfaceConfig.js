@@ -40,7 +40,7 @@ export const TaskInterfaceConfig = () => {
       'Проверьте статус интерфейса командой show ip interface brief.',
       'Убедитесь, что сеть отображается в таблице маршрутизации как connected.',
     ],
-    imagePath: '/images/int_confug.png',
+    imagePath: '/images/int_confug_2.png',
     imageAlt: 'Interface Configuration',
     previousLink: '/interface-config/',
     taskId: 'interface-config',

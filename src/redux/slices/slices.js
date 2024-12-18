@@ -230,7 +230,7 @@ const terminalSlice = createSlice({
 
       // Обновляем уведомления
       state.notifications = userData.notifications || null;
-      state.lastVisitedPath = userData.lastVisitedPath || 'interface-config';
+      state.lastVisitedPath = userData.lastVisitedPath || 'intro';
     },
 
     logout(state) {
