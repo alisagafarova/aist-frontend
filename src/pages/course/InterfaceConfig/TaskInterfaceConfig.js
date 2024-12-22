@@ -46,6 +46,12 @@ export const TaskInterfaceConfig = () => {
     taskId: 'interface-config',
     resetImage: resetImage,
     helpImage: helpImage,
+    hints: [
+      'Введите команду: \nconfigure terminal',
+      'Введите:\ninterface Gi0/0',
+      'Назначьте IP-адрес:\nip address 10.2.2.1 255.255.255.0',
+      'Включите интерфейс командой:\nno shutdown',
+    ],
   };
 
   return <TaskContainer labData={labData} onReset={handleReset} onHelp={handleHelp} />;

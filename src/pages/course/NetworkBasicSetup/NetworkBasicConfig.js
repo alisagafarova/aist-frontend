@@ -40,6 +40,11 @@ export const NetworkBasicConfig = () => {
     taskId: 'network-config',
     resetImage: resetImage,
     helpImage: helpImage,
+    hints: [
+      'На R1 войдите конфигурационный режим, в режим интерфейса Gi0/0 и пропишите статический маршрут: \ninterface Gi0/0\nip address 10.2.2.1 255.255.255.0\nno shutdown\nip route 192.168.1.0 255.255.255.0',
+      'На R2 войдите конфигурационный режим, в режим интерфейса Gi0/1 и настройте интерфейс: \ninterface Gi0/1\nip address 10.2.2.2 255.255.255.0\nno shutdown',
+      'Проверьте маршрут командой ping с R1: \nping 192.168.1.1',
+    ],
   };
 
   return <TaskContainer labData={labData} onReset={handleReset} onHelp={handleHelp} />;

@@ -43,6 +43,11 @@ export const StaticRouteConfig = () => {
     taskId: 'static-route',
     resetImage: resetImage,
     helpImage: helpImage,
+    hints: [
+      'Введите команду:\nconfigure terminal',
+      'Введите:\nip route 192.168.1.0 255.255.255.0 10.2.2.2',
+      'Проверьте статический маршрут командой:\nshow ip route',
+    ],
   };
 
   return <TaskContainer labData={labData} onReset={handleReset} onHelp={handleHelp} />;
