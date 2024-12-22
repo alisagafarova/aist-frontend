@@ -24,3 +24,9 @@
     background-color: #4caf50; /* Зелёный цвет */
     color: white;
   }
+
+
+  @media (max-width: 768px) {
+    .checkButton{width: 80%; font-size: 10px;}
+
+  }

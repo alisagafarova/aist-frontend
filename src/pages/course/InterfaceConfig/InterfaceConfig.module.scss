@@ -41,6 +41,7 @@
 }
 
 .taskButton{
+
   font-family: "Roboto Mono", monospace;
   width: 170px;
   height: 45px;
@@ -87,7 +88,22 @@ color: #2c3e50;
 }
 
 .buttons_bar {
+
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+  .pageContainer {
+    font-size: 10px;
+  }
+
+  .taskButton{
+    width: 120px;
+    height: 45px;
+    font-size: 10px;
+  }
+  
 }

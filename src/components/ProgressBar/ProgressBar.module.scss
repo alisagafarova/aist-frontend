@@ -1,13 +1,16 @@
 .pageContainer {
+
     display: flex;
     width: 90%;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 15px;
     margin: 0 auto;
+
   }
 
   .menuButton {
+ 
     position: fixed;
     top: 150px;
     left: 10px;
@@ -19,11 +22,14 @@
   }
   
   .menuIcon {
+
     font-size: 30px;
     color: #333;
+
   }
   
   .sidebar {
+   
     position: fixed;
     top: 0;
     left: -400px; /* Начальное положение вне экрана */
@@ -142,7 +148,9 @@
     }
   }
   
+  
   .content {
+  
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -150,6 +158,7 @@
   }
   
   .progress {
+
     margin-bottom: 20px;
   }
   
@@ -172,6 +181,13 @@
     border-radius: 4px;
   }
   
+  @media (max-width: 768px) {
+    .content {
+
+      width: 80%;
+
+    }
+  }
 
 
 

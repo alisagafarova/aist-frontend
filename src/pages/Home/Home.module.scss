@@ -10,6 +10,7 @@
   flex-direction: column;
   width: 100vw;
   align-items: center;
+
 }
 
 .intro {
@@ -47,6 +48,8 @@
   cursor: pointer;
   transition: box-shadow 0.3s;
   text-decoration: none;
+  -webkit-appearance: none; /* Убирает стили браузера */
+  appearance: none; /* Убирает стили браузера */
 }
 
 .intro_button:hover {
@@ -118,6 +121,8 @@
   cursor: pointer;
   transition: box-shadow 0.3s;
   text-decoration: none;
+  -webkit-appearance: none; /* Убирает стили браузера */
+  appearance: none; /* Убирает стили браузера */
 }
 
 .go_button:hover {

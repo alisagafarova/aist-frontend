@@ -32,6 +32,7 @@
 }
 
 .tab {
+ 
   width: 46px;
   cursor: pointer;
   border: none;
@@ -51,4 +52,51 @@
   background-color: white;
   border-bottom: 2px solid #00ff00;
   font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+  .terminal {
+    height: 400px; /* Уменьшенная высота терминала */
+    font-size: 12px; /* Уменьшенный размер текста */
+    padding: 15px; /* Меньшие отступы */
+  }
+
+  .lab_terminal {
+    width: 80%; 
+    align-self: center;/* Терминал занимает всю ширину */
+  }
+
+  .tabs {
+    flex-wrap: wrap; /* Вкладки располагаются в несколько строк при нехватке места */
+    justify-content: center; /* Выравнивание по центру */
+    gap: 5px; /* Расстояние между вкладками */
+  }
+
+  .tab, 
+  .active_tab {
+    width: auto; /* Автоматическая ширина для адаптации к содержимому */
+    padding: 5px 10px; /* Отступы для вкладок */
+    font-size: 12px; /* Уменьшенный размер текста */
+  }
+
+  .tab:hover {
+    background-color: #eee; /* Светлый фон при наведении */
+  }
+
+  .active_tab {
+    border-bottom: 2px solid #00ff00; /* Зеленая линия остается */
+    font-weight: bold;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .tabs {
+    display: flex;
+    justify-content:start;
+    height: 35px;
+  }
+  
 }

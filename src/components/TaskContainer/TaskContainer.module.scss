@@ -221,3 +221,87 @@
     color: #007bff;
   }
   
+
+  /* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .lab_block {
+      width: 100%; /* Используем всю ширину экрана */
+      padding: 10px;
+      
+    }
+  
+    .lab_environment {
+      flex-direction: column; /* Вертикальное расположение блоков */
+      height: auto; /* Высота по содержимому */
+      gap: 20px;
+    }
+  
+    .lab_terminal {
+      width: 100%; /* Терминал занимает всю ширину */
+      padding: 15px;
+    }
+  
+    .lab_buttons {
+ 
+        align-self: center;
+        width: 80%;
+      flex-direction: row; /* Кнопки располагаются вертикально */
+      justify-content: space-around;
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+
+.lab_buttons .right {
+ 
+    padding: 0px; /* Расстояние между кнопками справа */
+}
+  
+    .button_previous {
+      width: 100%; /* Кнопка занимает всю ширину */
+      height: auto;
+      padding: 10px;
+      font-size: 10px;
+    }
+  
+    .resetButton {
+      width: 40px; /* Уменьшенная кнопка */
+      height: 40px;
+    }
+  
+    .modal {
+      width: 70%; /* Модальное окно занимает почти весь экран */
+      padding: 20px; /* Уменьшенные отступы */
+      font-size: 14px;
+    }
+  
+    .modal h3 {
+      font-size: 16px; /* Уменьшенный размер заголовка */
+    }
+  
+    .modal li {
+      font-size: 14px; /* Уменьшенный размер текста списка */
+    }
+  
+    .closeButton {
+      font-size: 25px; /* Чуть меньшая кнопка закрытия */
+    }
+  
+    .intro_button,
+    .go_button {
+      width: 100%; /* Кнопки занимают всю ширину */
+      font-size: 10px; /* Увеличенный текст для удобства на мобильных */
+      padding: 15px;
+    }
+  
+    .lab_task p,
+    .lab_task ul {
+      font-size: 12px; /* Уменьшенный размер текста */
+    }
+  
+    .commandStyle {
+      font-size: 12px; /* Меньший размер шрифта для команд */
+      padding: 10px; /* Уменьшенные отступы */
+    }
+  }
+  

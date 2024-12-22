@@ -42,7 +42,6 @@ const autoSaveMiddleware = (store) => (next) => async (action) => {
       const result = await saveProgress(progressData);
 
       if (result.success) {
-        console.log('Progress saved after action:', action.type);
       }
     } catch (error) {
       console.error('Error during auto-save:', error);

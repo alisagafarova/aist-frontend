@@ -108,4 +108,20 @@
   border-color: #efda38;
   box-shadow: 0 0 5px rgba(239, 218, 56, 0.5);
 }
+
+
+@media (max-width: 768px) {
+
+  .finish_page h1 {
+    font-size: 25px;
+  }
   
+  .finish_page p {
+    font-size: 15px;
+  }
+  
+  .finish_page h2 {
+    font-size: 20px;
+  }
+  
+}

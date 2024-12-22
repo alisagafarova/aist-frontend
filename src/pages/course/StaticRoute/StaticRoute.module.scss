@@ -91,3 +91,17 @@ color: #2c3e50;
   display: flex;
   justify-content: space-between;
 }
+
+
+@media (max-width: 768px) {
+  .pageContainer {
+    font-size: 10px;
+  }
+
+  .taskButton{
+    width: 120px;
+    height: 45px;
+    font-size: 10px;
+  }
+  
+}
