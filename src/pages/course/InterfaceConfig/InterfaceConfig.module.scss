@@ -11,7 +11,7 @@
 }
 
 .config_guide {
-  
+
   font-family: "Roboto Mono", monospace;
   padding: 20px;
   max-width: 100%; /* Ограничиваем ширину */
@@ -41,7 +41,6 @@
 }
 
 .taskButton{
-
   font-family: "Roboto Mono", monospace;
   width: 170px;
   height: 45px;
@@ -49,16 +48,18 @@
   background-color: #EFDA38;
   border-radius: 10px;
   border: none;
-    cursor: pointer;
-    transition: box-shadow 0.3s;
-    align-self: flex-end;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  align-self: flex-end;
+  text-decoration: none;
+  -webkit-appearance: none; /* Убирает стили браузера */
+    appearance: none; /* Убирает стили браузера */
+    color: inherit;
 }
 
 .taskButton:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-
-
 
 .config_guide h2 {
 color: #2c3e50;

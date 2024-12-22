@@ -50,6 +50,10 @@
   border: none;
     cursor: pointer;
     transition: box-shadow 0.3s;
+    text-decoration: none;
+    -webkit-appearance: none; /* Убирает стили браузера */
+    appearance: none; /* Убирает стили браузера */
+    color: inherit;
     align-self: flex-end;
 }
 

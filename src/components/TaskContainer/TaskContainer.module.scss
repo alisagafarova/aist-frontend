@@ -73,6 +73,10 @@
 }
 
 .button_previous{
+    text-decoration: none;
+    -webkit-appearance: none; /* Убирает стили браузера */
+      appearance: none; /* Убирает стили браузера */
+      color: inherit;
     font-family: "Roboto Mono", monospace;
     width: 170px;
     height: 45px;

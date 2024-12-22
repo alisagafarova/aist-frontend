@@ -51,6 +51,10 @@
     cursor: pointer;
     transition: box-shadow 0.3s;
     align-self: flex-end;
+    text-decoration: none;
+  -webkit-appearance: none; /* Убирает стили браузера */
+  appearance: none; /* Убирает стили браузера */
+  color: inherit;
 }
 
 .taskButton:hover {
