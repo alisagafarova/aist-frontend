@@ -50,6 +50,7 @@
   text-decoration: none;
   -webkit-appearance: none; /* Убирает стили браузера */
   appearance: none; /* Убирает стили браузера */
+  color: inherit;
 }
 
 .intro_button:hover {
@@ -124,6 +125,7 @@
   -webkit-appearance: none; /* Убирает стили браузера */
   appearance: none; /* Убирает стили браузера */
   -webkit-tap-highlight-color: transparent; /* Убирает подсветку при тапе */
+  color: inherit;
 }
 
 .go_button:focus {
