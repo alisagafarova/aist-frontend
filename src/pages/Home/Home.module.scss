@@ -123,6 +123,7 @@
   text-decoration: none;
   -webkit-appearance: none; /* Убирает стили браузера */
   appearance: none; /* Убирает стили браузера */
+  -webkit-tap-highlight-color: transparent; 
 }
 
 .go_button:hover {
