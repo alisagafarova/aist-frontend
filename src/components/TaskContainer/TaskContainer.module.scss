@@ -69,14 +69,11 @@
 .lab_buttons .right {
     display: flex;
     gap: 10px;
+ 
     padding: 20px; /* Расстояние между кнопками справа */
 }
 
 .button_previous{
-    text-decoration: none;
-    -webkit-appearance: none; /* Убирает стили браузера */
-      appearance: none; /* Убирает стили браузера */
-      color: inherit;
     font-family: "Roboto Mono", monospace;
     width: 170px;
     height: 45px;
@@ -86,6 +83,11 @@
     border: none;
     cursor: pointer;
     transition: box-shadow 0.3s;
+    text-decoration: none;
+    -webkit-appearance: none; /* Убирает стили браузера */
+    appearance: none; /* Убирает стили браузера */
+
+    
 }
 
 .button_previous:hover {
@@ -266,6 +268,7 @@
       height: auto;
       padding: 10px;
       font-size: 10px;
+    
     }
   
     .resetButton {
