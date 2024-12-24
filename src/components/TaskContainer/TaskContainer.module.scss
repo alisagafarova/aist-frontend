@@ -60,6 +60,7 @@
     margin-top: 30px;
     width: 100%;
     align-items: center; /* Выравнивает кнопки по вертикали */
+    color: black;
 }
 
 .lab_buttons .left {
@@ -86,7 +87,7 @@
     text-decoration: none;
     -webkit-appearance: none; /* Убирает стили браузера */
     appearance: none; /* Убирает стили браузера */
-
+    color: inherit;
     
 }
 
